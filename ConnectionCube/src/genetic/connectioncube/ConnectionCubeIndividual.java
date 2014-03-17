@@ -12,16 +12,28 @@ import org.jaga.definitions.Individual;
  */
 public class ConnectionCubeIndividual implements Individual {
 
+	private Fitness fitness;
+	private int noOfDiffSides;
+	private CrossSection[] content;
+	
+	public ConnectionCubeIndividual(int noOfDiffSides){
+		this.noOfDiffSides = noOfDiffSides;
+		content = new CrossSection[noOfDiffSides];
+	}
+	
+	public void setSection(int section){
+		
+	}
+	
+	
 	@Override
 	public Fitness getFitness() {
-		// TODO Auto-generated method stub
-		return null;
+		return fitness;
 	}
 
 	@Override
 	public void setFitness(Fitness fitness) {
-		// TODO Auto-generated method stub
-		
+		this.fitness = fitness;		
 	}
 
 }
